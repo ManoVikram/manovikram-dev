@@ -16,7 +16,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${quicksand.variable} antialiased mx-6 md:mx-20`}>
+      <body className={`${quicksand.variable} antialiased mx-6 md:mx-20 text-primary`}>
         <Navbar />
         {children}
       </body>
