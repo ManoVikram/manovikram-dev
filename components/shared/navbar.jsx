@@ -1,12 +1,10 @@
-"use client"
-
 import Link from 'next/link'
 import React from 'react'
 import NavLink from './navLink'
 
 const Navbar = () => {
     return (
-        <nav className=''>
+        <nav className='fixed top-0 left-0 right-0 z-50 my-6 mx-6 md:my-8 md:mx-20'>
             <div className="flex flex-row justify-between items-center">
                 <Link href="/" className='font-quicksand font-bold text-2xl'>mano</Link>
 
