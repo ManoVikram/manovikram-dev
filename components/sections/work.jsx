@@ -30,8 +30,8 @@ const Work = () => {
     ]
 
     return (
-        <section id="work" className="w-full">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 my-8 md:my-16">
+        <section id="work" className="w-full my-6 md:my-10 lg:my-16">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
                 {projects.map((project, index) => {
                     return (
                         <div key={index} className="group/project-card relative overflow-hidden rounded-4xl aspect-3/2 cursor-pointer">
