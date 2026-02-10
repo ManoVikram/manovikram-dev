@@ -1,12 +1,15 @@
+import About from "@/components/sections/about";
 import Hero from "@/components/sections/hero";
 import Work from "@/components/sections/work";
 
 export default function Home() {
   return (
-    <main className="">
+    <main className="w-full">
       <Hero />
 
       <Work />
+
+      <About />
     </main>
   )
 }

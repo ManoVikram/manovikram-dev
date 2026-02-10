@@ -39,7 +39,7 @@ const Work = () => {
 
                             <div className="absolute inset-0 flex flex-col justify-between items-start p-8 md:p-10 group-hover/project-card:backdrop-blur-xs transition-all duration-300 opacity-0 group-hover/project-card:opacity-100">
                                 <div className="flex flex-col justify-start items-start gap-2">
-                                    <h3 className="w-1/2 text-white text-6xl font-semibold">{project.title}</h3>
+                                    <h2 className="w-1/2 text-white text-6xl font-semibold">{project.title}</h2>
 
                                     <p className="text-white text-lg font-semibold">{project.description}</p>
                                 </div>
