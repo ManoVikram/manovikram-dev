@@ -8,7 +8,7 @@ const Hero = () => {
             <p className="">Software Engineer <span>·</span> Applied AI</p>
 
             <div className="flex flex-col gap-2 md:gap-4">
-                <p className="text-5xl md:text-6xl lg:text-8xl">Building software that thinks</p>
+                <h1 className="text-5xl md:text-6xl lg:text-8xl">Building software that thinks</h1>
 
                 <p className="text-lg md:text-xl text-gray-500">Crafting products where AI feels like magic and software feels like second nature. I turn ambitious visions into daily rituals.</p>
             </div>
