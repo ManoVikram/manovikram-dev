@@ -5,7 +5,7 @@ import Work from "@/components/sections/work";
 
 export default function Home() {
   return (
-    <main className="w-full">
+    <>
       <Hero />
 
       <Work />
@@ -13,6 +13,6 @@ export default function Home() {
       <About />
 
       <Services />
-    </main>
+    </>
   )
 }
