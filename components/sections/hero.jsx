@@ -8,9 +8,9 @@ const Hero = () => {
             <p className="">Software Engineer <span>·</span> Applied AI</p>
 
             <div className="flex flex-col gap-2 md:gap-4">
-                <h1 className="text-5xl md:text-6xl lg:text-8xl">Building software that thinks</h1>
+                <h1 className="text-6xl md:text-7xl lg:text-8xl">Building software that thinks</h1>
 
-                <p className="text-lg md:text-xl text-gray-500">Crafting products where AI feels like magic and software feels like second nature. I turn ambitious visions into daily rituals.</p>
+                <p className="text-xl md:text-2xl text-gray-500">Crafting products where AI feels like magic and software feels like second nature. I turn ambitious visions into daily rituals.</p>
             </div>
 
             <button className='group flex justify-between items-center bg-primary hover:bg-background border-[1] hover:border-[1] border-transparent hover:border-primary px-6 py-4 rounded-full gap-3 transition-colors duration-300 cursor-pointer' onClick={() => { }}>
