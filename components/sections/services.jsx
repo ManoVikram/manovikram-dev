@@ -33,7 +33,7 @@ const Services = () => {
         <Accordion type="multiple" className="w-full">
           {services.map((service) => (
             <AccordionItem key={service.value} value={service.value}>
-              <AccordionTrigger className="group text-4xl/relaxed font-normal hover:no-underline cursor-pointer">
+              <AccordionTrigger className="group text-3xl pt-8 md:pt-4 md:text-4xl/relaxed font-normal hover:no-underline cursor-pointer">
                 <span>{service.trigger}</span>
 
                 <svg width="28" height="28" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" className='ml-auto rotate-135 group-data-open:-rotate-45 transition-transform duration-300'>
@@ -42,7 +42,7 @@ const Services = () => {
                 </svg>
               </AccordionTrigger>
 
-              <AccordionContent className="text-2xl/relaxed font-normal text-secondary">{service.content}</AccordionContent>
+              <AccordionContent className="text-lg/relaxed md:text-2xl/relaxed font-normal text-secondary">{service.content}</AccordionContent>
             </AccordionItem>
           ))}
         </Accordion>
