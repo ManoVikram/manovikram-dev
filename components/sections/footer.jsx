@@ -36,7 +36,7 @@ const Footer = () => {
                     <div className="flex flex-col gap-1">
                         <p className="text-xl">GET ON A CALL</p>
 
-                        <a href='' className="text-lg underline">manovik18@gmail.com</a>
+                        <a href='https://calendar.app.google/PvtM2gCkhiT7HYFA6' target="_blank" rel="noopener noreferrer" className="text-lg underline">https://calendar.app.google/PvtM2gCkhiT7HYFA6</a>
                     </div>
                 </div>
 
