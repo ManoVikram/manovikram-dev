@@ -22,8 +22,8 @@ const Footer = () => {
     ]
 
     return (
-        <footer className="bg-primary min-h-[80dvh] px-6 md:px-20 pt-16 md:pt-20 lg:pt-24 pb-12">
-            <div className="flex flex-col justify-between items-start gap-10">
+        <footer id='contact' className="flex flex-col bg-primary min-h-dvh px-6 md:px-20 pt-16 md:pt-20 lg:pt-24 pb-12">
+            <div className="flex flex-1 flex-col justify-between items-start gap-10">
                 <div className="w-full flex flex-col lg:flex-row justify-start lg:justify-between items-start gap-20 lg:gap-10 text-white">
                     <div className="w-full flex flex-col gap-12 lg:gap-16">
                         <h2 className='text-6xl'>Let&apos;s build together</h2>
@@ -73,7 +73,7 @@ const Footer = () => {
                     </div>
                 </div>
 
-                <p className="text-sm text-secondary mt-20">&copy; 2026 Mano Vikram. All rights reserved.</p>
+                <p className="text-sm text-secondary mt-20">&copy; 2026 Mano Vikram</p>
             </div>
         </footer>
     )
