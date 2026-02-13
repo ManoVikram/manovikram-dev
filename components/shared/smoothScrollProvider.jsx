@@ -5,12 +5,12 @@ import { ScrollTrigger } from "gsap/ScrollTrigger"
 import { ReactLenis } from "lenis/react"
 import { useEffect, useRef } from "react"
 
+gsap.registerPlugin(ScrollTrigger)
+
 export default function SmoothScrollProvider({ children }) {
     const lenisRef = useRef()
 
     useEffect(() => {
-        gsap.registerPlugin(ScrollTrigger)
-
         const lenis = lenisRef.current?.lenis
         if (!lenis) return
 
