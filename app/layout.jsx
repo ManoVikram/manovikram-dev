@@ -2,11 +2,7 @@ import { Quicksand } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/shared/navbar";
 import Footer from "@/components/sections/footer";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-import SmoothScroller from "@/components/shared/smoothScroll";
-
-gsap.registerPlugin(ScrollTrigger);
+import SmoothScrollProvider from "@/components/shared/smoothScrollProvider";
 
 const quicksand = Quicksand({
   subsets: ["latin"],
@@ -23,7 +19,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${quicksand.variable} antialiased w-full overflow-x-hidden text-primary`}>
-        <SmoothScroller>
+        <SmoothScrollProvider>
           <Navbar />
 
           <main className="mx-6 md:mx-20">
@@ -31,7 +27,7 @@ export default function RootLayout({ children }) {
           </main>
 
           <Footer />
-        </SmoothScroller>
+        </SmoothScrollProvider>
       </body>
     </html>
   );

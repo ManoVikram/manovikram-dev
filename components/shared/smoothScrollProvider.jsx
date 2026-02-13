@@ -3,7 +3,7 @@
 import React from 'react'
 import { ReactLenis, useLenis } from 'lenis/dist/lenis-react'
 
-const SmoothScroller = ({ children }) => {
+const SmoothScrollProvider = ({ children }) => {
     return (
         <ReactLenis root options={{
             lerp: 0.1,
@@ -18,4 +18,4 @@ const SmoothScroller = ({ children }) => {
     )
 }
 
-export default SmoothScroller
+export default SmoothScrollProvider
