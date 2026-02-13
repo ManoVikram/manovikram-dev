@@ -1,5 +1,6 @@
 import React from 'react'
 import NavLink from '../shared/navLink'
+import Link from 'next/link'
 
 const Footer = () => {
     const socials = [
@@ -31,13 +32,13 @@ const Footer = () => {
                         <div className="flex flex-col gap-1">
                             <p className="text-xl">MAIL AT</p>
 
-                            <a href='mailto:manovik18@gmail.com' className="text-lg underline">manovik18@gmail.com</a>
+                            <Link href='mailto:manovik18@gmail.com' className="text-lg underline">manovik18@gmail.com</Link>
                         </div>
 
                         <div className="flex flex-col gap-1">
                             <p className="text-xl">GET ON A CALL</p>
 
-                            <a href='https://calendar.app.google/PvtM2gCkhiT7HYFA6' target="_blank" rel="noopener noreferrer" className="text-lg underline break-all">https://calendar.app.google/PvtM2gCkhiT7HYFA6</a>
+                            <Link href='https://calendar.app.google/PvtM2gCkhiT7HYFA6' target="_blank" rel="noopener noreferrer" className="text-lg underline break-all">https://calendar.app.google/PvtM2gCkhiT7HYFA6</Link>
                         </div>
                     </div>
 
@@ -57,7 +58,7 @@ const Footer = () => {
                         <ul className="w-full lg:w-fit flex flex-col gap-5">
                             {socials.map((social, index) => (
                                 <li key={index}>
-                                    <a href={social.url} target="_blank" rel="noopener noreferrer" className='group'>
+                                    <Link href={social.url} target="_blank" rel="noopener noreferrer" className='group'>
                                         <div className="flex flex-row justify-between items-center gap-20">
                                             <p className='group-hover:text-secondary transition-colors duration-300'>{social.name}</p>
 
@@ -66,7 +67,7 @@ const Footer = () => {
                                                 <path fill="currentColor" d="M777.344 201.344a32 32 0 0 1 45.312 45.312l-544 544a32 32 0 0 1-45.312-45.312l544-544z" className="fill-white group-hover:fill-secondary transition-colors duration-300" />
                                             </svg>
                                         </div>
-                                    </a>
+                                    </Link>
                                 </li>
                             ))}
                         </ul>

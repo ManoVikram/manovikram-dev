@@ -24,7 +24,7 @@ const NavSheet = () => {
                     <SheetTitle></SheetTitle>
                 </SheetHeader>
 
-                <ul className='flex flex-col justify-start items-center gap-8'>
+                <ul className='flex flex-col justify-start items-center gap-8' onClick={() => setIsOpen(false)}>
                     <li>
                         <NavLink href='#work'>WORK</NavLink>
                     </li>
