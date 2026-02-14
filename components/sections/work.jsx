@@ -1,7 +1,13 @@
+"use client"
+
+import { useGSAP } from '@gsap/react'
+import gsap from 'gsap'
 import Image from 'next/image'
-import React from 'react'
+import React, { useRef } from 'react'
 
 const Work = () => {
+    const projectsContainerRef = useRef(null)
+
     const projects = [
         {
             title: 'Memelab',
@@ -29,12 +35,28 @@ const Work = () => {
         },
     ]
 
+    useGSAP(() => {
+        gsap.from(".animate-project-card", {
+            scale: 0.9,
+            y: 50,
+            opacity: 0,
+            duration: 1.5,
+            stagger: 0.2,
+            ease: "power3.inOut",
+            scrollTrigger: {
+                trigger: projectsContainerRef.current,
+                start: "top 80%",
+                toggleActions: "play none none none"
+            }
+        })
+    }, { scope: projectsContainerRef })
+
     return (
-        <section id="work" className="w-full my-6 md:my-10 lg:my-16">
+        <section id="work" ref={projectsContainerRef} className="w-full my-6 md:my-10 lg:my-16">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
                 {projects.map((project, index) => {
                     return (
-                        <div key={index} className="group/project-card relative overflow-hidden rounded-4xl aspect-3/2 cursor-pointer">
+                        <div key={index} className="animate-project-card group/project-card relative overflow-hidden rounded-4xl aspect-3/2 cursor-pointer">
                             <Image src={project.image} alt={`project-${index + 1}`} loading='eager' className='object-cover group-hover/project-card:scale-110 transition-transform duration-500' sizes="(max-width: 768px) 100vw, 50vw" fill />
 
                             <div className="absolute inset-0 flex flex-col justify-between items-start p-8 md:p-10 group-hover/project-card:backdrop-blur-xs transition-all duration-300 opacity-0 group-hover/project-card:opacity-100">
