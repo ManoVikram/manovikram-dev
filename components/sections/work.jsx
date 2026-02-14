@@ -13,25 +13,25 @@ const Work = () => {
             title: 'Memelab',
             description: 'Create crisp, share-ready memes in one click.',
             image: '/images/memelab.png',
-            link: ''
+            link: 'https://github.com/ManoVikram/Memelab'
         },
         {
             title: 'Ascendant',
             description: 'Your AI sensei for smarter training and real progress',
             image: '/images/ascendant.png',
-            link: ''
+            link: 'https://github.com/ManoVikram/ascendant-ai-fitness-coach'
         },
         {
             title: 'Sixeyes Summarizer',
-            description: '',
+            description: 'AI-powered transcription, summarization & key-takeaways in seconds.',
             image: '/images/sixeyes-summarizer.png',
-            link: ''
+            link: 'https://github.com/ManoVikram/Six-Eyes-Audio-Summarizer'
         },
         {
             title: 'Navkar',
             description: 'Find a life partner, not just a profile.',
             image: '/images/navkar.png',
-            link: ''
+            link: 'https://github.com/ManoVikram/Navkar-Matrimony-App'
         },
     ]
 
