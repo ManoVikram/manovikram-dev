@@ -45,7 +45,7 @@ const Footer = () => {
                     <div className="w-full flex flex-col md:flex-row md:justify-between lg:justify-end items-start gap-10 lg:gap-44">
                         <ul className="w-full lg:w-fit flex flex-col gap-5">
                             <li>
-                                <NavLink href='#about'>HOME</NavLink>
+                                <NavLink href='/'>HOME</NavLink>
                             </li>
                             <li>
                                 <NavLink href='#work'>WORK</NavLink>
