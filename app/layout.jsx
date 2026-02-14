@@ -13,6 +13,14 @@ const quicksand = Quicksand({
 export const metadata = {
   title: "Mano Vikram - Applied AI Engineer",
   description: "Applied AI engineer building scalable web and mobile products with Next.js, Flutter, Go, gRPC, Python AI microservices, and PostgreSQL.",
+  icons: {
+    icon: [
+      { url: '/icons/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
+      { url: '/icons/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
+    ],
+    apple: '/icons/apple-touch-icon.png',
+    shortcut: '/icons/favicon.ico',
+  },
 };
 
 export default function RootLayout({ children }) {
