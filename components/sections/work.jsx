@@ -40,7 +40,7 @@ const Work = () => {
             scale: 0.9,
             y: 50,
             opacity: 0,
-            duration: 1.5,
+            duration: 1,
             stagger: 0.2,
             ease: "power3.inOut",
             scrollTrigger: {

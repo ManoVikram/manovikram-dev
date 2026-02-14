@@ -1,7 +1,13 @@
-import React from 'react'
+"use client"
+
+import React, { useRef } from 'react'
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
+import { useGSAP } from '@gsap/react'
+import gsap from 'gsap'
 
 const Services = () => {
+  const servicesContainerRef = useRef(null)
+
   const services = [
     {
       value: "ai-products",
@@ -25,9 +31,23 @@ const Services = () => {
     }
   ]
 
+  useGSAP(() => {
+    gsap.from(".animate-services-content", {
+      x: 50,
+      opacity: 0,
+      duration: 1.5,
+      ase: "power3.out",
+      scrollTrigger: {
+        trigger: servicesContainerRef.current,
+        start: "top 80%",
+        toggleActions: "play none none none"
+      }
+    })
+  }, { scope: servicesContainerRef })
+
   return (
-    <section className="w-full my-24 md:my-32 lg:my-40">
-      <div className="flex flex-col justify-start items-start gap-4">
+    <section ref={servicesContainerRef} className="w-full my-24 md:my-32 lg:my-40">
+      <div className="animate-services-content flex flex-col justify-start items-start gap-4">
         <h6 className="text-2xl shrink-0">Services</h6>
 
         <Accordion type="multiple" className="w-full">

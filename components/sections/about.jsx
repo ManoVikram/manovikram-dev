@@ -5,13 +5,13 @@ import gsap from 'gsap'
 import React, { useRef } from 'react'
 
 const About = () => {
-    const aboutContainerRef = useRef()
+    const aboutContainerRef = useRef(null)
 
     useGSAP(() => {
         gsap.from(".animate-ethos-content", {
             x: 50,
             opacity: 0,
-            duration: 2,
+            duration: 1.5,
             ease: "power3.out",
             scrollTrigger: {
                 trigger: aboutContainerRef.current,

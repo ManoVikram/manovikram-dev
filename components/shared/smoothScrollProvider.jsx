@@ -8,7 +8,7 @@ import { useEffect, useRef } from "react"
 gsap.registerPlugin(ScrollTrigger)
 
 export default function SmoothScrollProvider({ children }) {
-    const lenisRef = useRef()
+    const lenisRef = useRef(null)
 
     useEffect(() => {
         const lenis = lenisRef.current?.lenis
