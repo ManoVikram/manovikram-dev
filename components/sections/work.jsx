@@ -14,7 +14,7 @@ const Work = () => {
             title: 'Memelab',
             description: 'Create crisp, share-ready memes in one click.',
             image: '/images/memelab.png',
-            link: 'https://github.com/ManoVikram/Memelab'
+            link: 'https://memelab-five.vercel.app/'
         },
         {
             title: 'Ascendant',
