@@ -11,6 +11,12 @@ const Work = () => {
 
     const projects = [
         {
+            title: 'Switchworthy',
+            description: 'Resume analyzer for developers with 0-2 years of experience targeting US remote roles.',
+            image: '/images/switchworthy.png',
+            link: 'https://switchworthy.xyz/'
+        },
+        {
             title: 'Memelab',
             description: 'Create crisp, share-ready memes in one click.',
             image: '/images/memelab.png',
@@ -28,12 +34,12 @@ const Work = () => {
             image: '/images/sixeyes-summarizer.png',
             link: 'https://github.com/ManoVikram/Six-Eyes-Audio-Summarizer'
         },
-        {
-            title: 'Navkar',
-            description: 'Find a life partner, not just a profile.',
-            image: '/images/navkar.png',
-            link: 'https://github.com/ManoVikram/Navkar-Matrimony-App'
-        },
+        // {
+        //     title: 'Navkar',
+        //     description: 'Find a life partner, not just a profile.',
+        //     image: '/images/navkar.png',
+        //     link: 'https://github.com/ManoVikram/Navkar-Matrimony-App'
+        // },
     ]
 
     useGSAP(() => {
