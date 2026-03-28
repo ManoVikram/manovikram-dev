@@ -3,6 +3,7 @@ import "./globals.css";
 import Navbar from "@/components/shared/navbar";
 import Footer from "@/components/sections/footer";
 import SmoothScrollProvider from "@/components/shared/smoothScrollProvider";
+import { Analytics } from "@vercel/analytics/next"
 
 const quicksand = Quicksand({
   subsets: ["latin"],
@@ -36,6 +37,8 @@ export default function RootLayout({ children }) {
 
           <Footer />
         </SmoothScrollProvider>
+
+        <Analytics />
       </body>
     </html>
   );
